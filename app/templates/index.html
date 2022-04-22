@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block styles %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+{% endblock %}
+{% block main %}
+<div class="errors"></div>
+<div class="container m-4 p-2" id="login_form">
+  <form action="">
+      <label for="username">Username: </label>
+      <input type="text" id="username" class="mt-2" style="display: block;">
+      <input type="submit" class="btn btn-primary mt-2" value="Entrar">
+  </form>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+{% endblock %}
